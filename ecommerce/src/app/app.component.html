@@ -1,0 +1,53 @@
+<div><mat-toolbar color="primary">
+  
+<li><H1 >E-cart</H1></li>
+
+<div class="spacer"></div>
+<!-- <div class="searchbox"> -->
+<a><input type="search" id="form1" placeholder="search" [(ngModel)]="searchTerm" (keyup)="search($event)"></a>
+  <!-- <img src="https://pluspng.com/img-png/search-button-png-search-icon-this-icon-is-supposed-to-represent-a-magnifying-glass-it-s-a-large-png-50-px-1600.png" height="20" width="20">
+  <input type="text" placeholder="search" > -->
+<!-- </div> -->
+<img src="https://cdn0.iconfinder.com/data/icons/travel-line-icons-vol-1/48/019-512.png" height="20" width="20">
+<a mat-button routerLink="cart" routerLinkActive="active"> My Cart</a>
+<img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIGlkPSJhIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNiAyNiI+PGRlZnM+PHN0eWxlPi5ie2ZpbGw6IzgzMjcyOTt9LmN7ZmlsbDpub25lO3N0cm9rZTojZWZlM2UzO3N0cm9rZS13aWR0aDoxLjRweDt9PC9zdHlsZT48L2RlZnM+PHBhdGggY2xhc3M9ImIiIGQ9Ik0xMywxNS43NWMtMy42NywwLTExLDEuODQtMTEsNS41djIuNzVIMjR2LTIuNzVjMC0zLjY2LTcuMzMtNS41LTExLTUuNVptMC0xMy43NWMtMy4wNCwwLTUuNSwyLjQ2LTUuNSw1LjVzMi40Niw1LjUsNS41LDUuNSw1LjUtMi40Niw1LjUtNS41LTIuNDYtNS41LTUuNS01LjVabTAsMTYuNWMzLjcxLDAsNy45NywxLjc3LDguMjUsMi43NUg0Ljc1Yy4zMi0uOTksNC41NS0yLjc1LDguMjUtMi43NW0wLTEzLjc1YzEuNTEsMCwyLjc1LDEuMjQsMi43NSwyLjc1cy0xLjI0LDIuNzUtMi43NSwyLjc1LTIuNzUtMS4yNC0yLjc1LTIuNzUsMS4yNC0yLjc1LDIuNzUtMi43NSIvPjxwYXRoIGNsYXNzPSJjIiBkPSJNMTMsMTUuNzVjLTMuNjcsMC0xMSwxLjg0LTExLDUuNXYyLjc1SDI0di0yLjc1YzAtMy42Ni03LjMzLTUuNS0xMS01LjVabTAtMTMuNzVjLTMuMDQsMC01LjUsMi40Ni01LjUsNS41czIuNDYsNS41LDUuNSw1LjUsNS41LTIuNDYsNS41LTUuNS0yLjQ2LTUuNS01LjUtNS41Wm0wLDE2LjVjMy43MSwwLDcuOTcsMS43Nyw4LjI1LDIuNzVINC43NWMuMzItLjk5LDQuNTUtMi43NSw4LjI1LTIuNzVtMC0xMy43NWMxLjUxLDAsMi43NSwxLjI0LDIuNzUsMi43NXMtMS4yNCwyLjc1LTIuNzUsMi43NS0yLjc1LTEuMjQtMi43NS0yLjc1LDEuMjQtMi43NSwyLjc1LTIuNzUiLz48L3N2Zz4=" height="20" width="20">
+<!-- <div>
+<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Login
+  </button>
+</div> -->
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<div class="dropdown">
+  <button class="dropbtn">Login</button>
+  <div class="dropdown-content">
+   <h5><a href="#" [routerLink]="['/login']">User Login</a></h5>
+  <h5><a href="#" [routerLink]="['/adminlogin']" >Admin Login</a></h5>
+    
+  </div>
+</div>
+
+</body>
+</html>
+
+</mat-toolbar>
+
+  <div class="container">
+    <div  class="row">
+      <ul>
+  <a class="all" [routerLink]="['/jewellery']">JEWELLERY</a>
+  <a class="all" [routerLink]="['/beauty']">BEAUTY</a>
+  <a class="all" [routerLink]="['/handbags']">HANDBAGS</a>
+  <a class="all" [routerLink]="['/footwear']">FOOTWEAR</a>
+  <a class="all" [routerLink]="['/accessories']">ACCESSORIES</a>
+</ul>
+  </div>
+</div>
+
+
+
+<router-outlet></router-outlet>

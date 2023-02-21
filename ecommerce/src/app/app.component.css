@@ -1,0 +1,76 @@
+.spacer{
+    flex: 1 1 auto;
+}
+.dropbtn {
+    background-color:rgb(72, 72, 192);
+    color: white;
+    padding: 20px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 80px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    height: 50px;
+    z-index: 1;
+   
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 3x 8px;
+    padding-left: 8px;
+    text-decoration: none;
+    display: block;
+    font-size: 15px;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color:blue;}
+   
+  .searchbox{
+    border-radius: 10px;
+
+  }
+  nav{
+    background-color: rgb(223, 235, 235);
+    overflow: hidden;
+    list-style-type: none;
+    flex: 1 1 auto;
+
+}
+.all{
+    list-style: none;
+    text-indent: 100px;
+    font-size: large; 
+    padding: 50px;
+    color: black;
+
+
+}
+ul { 
+    padding: 0px;
+ }
+ li {
+    float: left;
+    width: auto;
+    list-style: outside none none;
+ }
+ .color{
+    color: rgb(253, 253, 253);
+ }
+ .form-group{
+    border-color: antiquewhite;
+ }

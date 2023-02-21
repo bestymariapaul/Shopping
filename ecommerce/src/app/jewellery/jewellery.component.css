@@ -1,0 +1,82 @@
+.item{
+
+    margin:0px 15px;
+
+    text-align: center;
+
+    padding: 50px;
+
+    margin: 100px;
+    
+ }
+
+ .item a:hover{
+
+     color: blue;
+
+ }
+
+ 
+
+ .img{
+
+     width: 300px;
+
+     height: 300px;
+
+     margin-bottom: 15 px;
+
+    transition: 0.3s ease-in-out;
+    padding-top: 60px;
+
+    padding-left: 50px;
+   
+   
+
+ }
+
+ .img:hover{
+
+     transition: 0.s ease-in-out;
+
+     transform: scale(1.1);
+
+ 
+
+ }
+
+ .card-col-md3{
+
+ padding: 40px;
+
+ }
+
+ .card {
+
+     padding: 60px;
+
+     margin:50px;
+     
+}
+.divv{
+    padding-left: 40px;
+    
+}
+.div{
+    padding-left: 50px;
+}
+.button{
+    padding-left: 50px;
+    
+    
+
+}
+.fa-heart-o {
+    color: red;
+    cursor: pointer;
+  }
+ 
+  .fa-heart {
+    color: red;
+    cursor: pointer;
+  }

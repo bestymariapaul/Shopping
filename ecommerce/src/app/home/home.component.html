@@ -1,0 +1,19 @@
+
+<div>  
+    <div class="row">   
+    </div>  
+  </div>  
+  <!-- <hr style="background-color:black" />   -->
+  <div class="row">  
+    <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">  
+      <div ngxSlickItem *ngFor="let image of images" class="slide">  
+        <li class="img"><a routerLink="/jewellery"><img src="{{ image.img1 }}" width="1200" height="500"></a> 
+        <a routerLink="/gold"><img src="{{ image.img2 }}" width="1200" height="500"></a>  
+        <a routerLink="/gold"><img src="{{ image.img3 }}" width="1200" height="500"></a>  
+        <a routerLink="/gold"><img src="{{ image.img4 }}" width="1200" height="500"></a>  
+        <a routerLink="/gold"><img src="{{ image.img5 }}" width="1200" height="500"></a>  
+      </li> 
+        
+      </div>  
+    </ngx-slick-carousel>  
+  </div> 

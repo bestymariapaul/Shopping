@@ -20,6 +20,7 @@ import { CartComponent } from './cart/cart.component';
 import { HttpClientModule } from '@angular/common/http';
 import { SignupComponent } from './signup/signup.component';
 import { FilterPipe } from './filter.pipe';
+import { AdminpageComponent } from './adminpage/adminpage.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,7 +34,8 @@ import { FilterPipe } from './filter.pipe';
     AccessoriesComponent,
     CartComponent,
     SignupComponent,
-    FilterPipe
+    FilterPipe,
+    AdminpageComponent
   ],
   imports: [
     BrowserModule,

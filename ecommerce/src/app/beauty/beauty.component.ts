@@ -19,7 +19,7 @@ export class BeautyComponent implements OnInit{
   constructor(private service:ProductsService,private CartService:CartService) { }
 
   ngOnInit(): void {
-    this.service.getAllProducts().subscribe((data)=>{
+    this.service.getAllProduct().subscribe((data)=>{
       this.productdata=data;
   
       this.productdata.forEach((a:any) => {

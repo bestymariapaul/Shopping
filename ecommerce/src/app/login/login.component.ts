@@ -26,18 +26,24 @@ export class LoginComponent {
     const user= res.find((a:any)=>{
       return a.email === this.loginForm.value.email && a.password === this.loginForm.value.password
     });
+    this.http.post<any>("http://localhost:3001/login",this.loginForm.value)
+    .subscribe((res)=>{});
 
     if(user){
       alert("Login Success!!");
       this.loginForm.reset();
       this.router.navigate(['home']);
+
     }
     else{
       alert("User Not Found!!")
     }
+
+    
    
 
   })
 
 }
+logout(){ }
 }

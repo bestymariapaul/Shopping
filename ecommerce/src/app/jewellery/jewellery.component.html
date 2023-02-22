@@ -5,7 +5,7 @@
       
         <ng-container *ngFor="let item of productdata | filter:searchkey :'name'">
             <div class="card-col-md-4">
-           
+           <div class="spacer">
             <img class="img" src="{{item.image}}" alt=""> <br><br>
             <h5 class="divv" style="white-space: nowrap;overflow: hidden;text-overflow: ellipse;max-width: 5inch">{{item.Jewellery}}</h5>
             
@@ -14,7 +14,7 @@
               <P class="divv">₹ {{item.price}}</P> 
                 <!-- <h4>{{item.description}}</h4>
                  -->
-                 
+                </div> 
                 <div class="button">
                  <button class="btn btn-outline-dark" [routerLink]="['/login']" (click)="addtocart(item)">ADD TO CART</button>&nbsp;
             <button class="btn btn-outline-dark"  [routerLink]="['/cart']" (click)="addtocart(item)">BUY NOW</button>

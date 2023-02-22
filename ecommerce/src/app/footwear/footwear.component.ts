@@ -17,7 +17,7 @@ export class FootwearComponent implements OnInit{
   constructor(private service:ProductsService,private CartService:CartService) { }
 
   ngOnInit(): void {
-    this.service.getAllProducts().subscribe((data)=>{
+    this.service.getAllproducts().subscribe((data)=>{  
       this.productdata=data;
   
       this.productdata.forEach((a:any) => {

@@ -33,5 +33,6 @@ export class JewelleryComponent implements OnInit{
     this.CartService.addtoCart(item);
     
   }
+  
 
 }

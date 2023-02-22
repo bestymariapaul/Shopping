@@ -24,4 +24,7 @@ public search = new BehaviorSubject<string>("");
   getAllProduct(){
     return this.client.get("http://localhost:3001/beauty")
   }
+  Products(){
+    return this.client.get("http://localhost:3001/Products")
+  }
 }

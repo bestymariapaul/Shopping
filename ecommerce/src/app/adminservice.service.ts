@@ -15,8 +15,9 @@ getProducts(){
 }
 
 setProduct(product : any){
-  this.cartItemList.push(...product);
+  this.cartItemList.push(product);
   this.productList.next(product);
+  this.getProducts
 }
 addtoCart(product:any){
   this.cartItemList.push(product);
@@ -35,5 +36,6 @@ removeAllCart(){
   this.cartItemList = []
   this.productList.next(this.cartItemList);
 }
+
 
 }

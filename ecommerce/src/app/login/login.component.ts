@@ -11,6 +11,7 @@ import { HttpClient } from '@angular/common/http';
 export class LoginComponent {
   productdata:any;
   loginForm!: FormGroup;
+  msg='Login Success!!'
   constructor(private formBuilder:FormBuilder, private http:HttpClient,private router:Router) { }
   ngOnInit(): void {
     this.loginForm=this.formBuilder.group({
@@ -30,9 +31,9 @@ export class LoginComponent {
     .subscribe((res)=>{});
 
     if(user){
-      alert("Login Success!!");
+      alert(this.msg);
       this.loginForm.reset();
-      this.router.navigate(['home']);
+      this.router.navigate(['cart']);
 
     }
     else{

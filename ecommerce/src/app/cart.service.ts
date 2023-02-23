@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { BehaviorSubject } from 'rxjs';
+import { BehaviorSubject, ReplaySubject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -9,8 +9,15 @@ export class CartService {
   public cartItemList : any =[]
   public productList = new BehaviorSubject<any>([]);
   public search = new BehaviorSubject<string>("");
+  private cartCount = new ReplaySubject<number>(1); 
+  cartCount$ = this.cartCount.asObservable();
 
   constructor() { }
+  setCartCount(count: number) { //load values stored in cart beforehand
+    // encapsulate with logic to set local storage
+    localStorage.setItem("cart_count", JSON.stringify(count)); //stored in localstorage parameter passed in function is stored
+    this.cartCount.next(count); //when next is called, the value is multicasted to all subscribers
+  }
   getProducts(){
     return this.productList.asObservable();
   }

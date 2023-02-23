@@ -21,6 +21,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { SignupComponent } from './signup/signup.component';
 import { FilterPipe } from './filter.pipe';
 import { AdminpageComponent } from './adminpage/adminpage.component';
+
+
+import { ProductsComponent } from './products/products.component';
+import { ProductdetailsComponent } from './productdetails/productdetails.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,7 +39,9 @@ import { AdminpageComponent } from './adminpage/adminpage.component';
     CartComponent,
     SignupComponent,
     FilterPipe,
-    AdminpageComponent
+    AdminpageComponent,
+    ProductsComponent,
+    ProductdetailsComponent
   ],
   imports: [
     BrowserModule,
@@ -47,7 +53,7 @@ import { AdminpageComponent } from './adminpage/adminpage.component';
     MatSelectModule,
     SlickCarouselModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

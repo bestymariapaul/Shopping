@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { AdminserviceService } from '../adminservice.service';
+import { CartService } from '../cart.service';
 import { ProductsService } from '../products.service';
 @Component({
   selector: 'app-adminpage',
@@ -11,27 +12,39 @@ export class AdminpageComponent {
   position="center"
   productdata:any
   searchkey:string ="";
+  public products : any=[];
 
 
 
-  constructor(private service:ProductsService,private CartService:AdminserviceService,private http:HttpClient) { }
+  constructor(private service:ProductsService,private cartService:CartService,private http:HttpClient, private admin: AdminserviceService) { }
   ngOnInit(): void {
+    this.service.Products()
+    .subscribe(res=>{
+      this.products=res;
+    })
     this.service.Products().subscribe((data)=>{
-      this.productdata=data;
+      this.products=data;
   
-      this.productdata.forEach((a:any) => {
+      this.products.forEach((a:any) => {
         Object.assign(a,{quantity:1,total:a.price});
         
       });  
     });
   }
   addtocart(item:any){
-    this.CartService.addtoCart(item);
+    this.admin.addtoCart(item);
     
   }
-  addproduct(){
-    this.http.post<any>("http://localhost:3001/Jewellery",this.CartService.productList)
-    .subscribe((res)=>{    })
+  addproduct(item:any){
+    this.http.post<any>("http://localhost:3001/Jewellery",this.admin.addtoCart)
+    .subscribe((res)=>{
+      console.log(res)
+ 
+    })
+  }
+  removeitem(item:any){
+    this.admin.removeCartItem(item);
+
   }
 
 }

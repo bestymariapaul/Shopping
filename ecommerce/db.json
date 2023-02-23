@@ -80,6 +80,21 @@
       "name": "Sumptuous Golden Teardrop Pendant",
       "price": 25590,
       "description": "This grand 22 Karat gold pendant is shaped like a curved teardrop, with a carved panel of flower petals and leaves"
+    },
+    {
+      "id": 111
+    },
+    {
+      "id": 112
+    },
+    {
+      "id": 113
+    },
+    {
+      "id": 114
+    },
+    {
+      "id": 115
     }
   ],
   "handbags": [
@@ -271,6 +286,188 @@
     }
   ],
   "cart": [],
+  "Allproducts": [
+    {
+      "id": 111,
+      "image": [
+        "https://lmsin.net/cdn-cgi/image/h=1125,w=1125,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010789255-1000010789254_02-2100.jpg"
+      ],
+      "name": "CODE Women Solid Zip-Closure Handbag",
+      "price": 3427,
+      "description": "Defined by a textured detail, this handbag features a zip-closure that protect the spacious compartments. The design is also enhanced by dual rolled top handles and a detachable shoulder strap that allows you to carry it with ease."
+    },
+    {
+      "id": 112,
+      "image": [
+        "https://lmsin.net/cdn-cgi/image/h=1125,w=1125,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009808613-1000009808610_01-2100.jpg"
+      ],
+      "name": "GINGER Women Textured Zip-Closure Handbag",
+      "price": 2590,
+      "description": "Defined by a textured detail, this handbag features a zip-closure that protect the spacious compartments. The design is also enhanced by dual rolled top handles and a detachable shoulder strap that allows you to carry it with ease."
+    },
+    {
+      "id": 113,
+      "image": [
+        "https://lmsin.net/cdn-cgi/image/h=1125,w=1125,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011134065-1000011134062_01-2100.jpg"
+      ],
+      "name": "GINGER Women Solid Handheld Bag",
+      "price": 886,
+      "description": "Carry everything in style in this handheld bag featuring two carry handles, a detachable sling strap, and a zippered main compartment."
+    },
+    {
+      "id": 114,
+      "image": [
+        "https://lmsin.net/cdn-cgi/image/h=1125,w=1125,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010998794-1000010998791_02-2100.jpg"
+      ],
+      "name": "GINGER Women Solid Handheld Bag",
+      "price": 990,
+      "description": "This high-end bag is detailed with an appealing surface, a secured closure, spacious compartment and multiple inner pockets."
+    },
+    {
+      "id": 115,
+      "image": [
+        "https://lmsin.net/cdn-cgi/image/h=1125,w=1125,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000012216276-1000010825072_01-2100.jpg"
+      ],
+      "name": "GINGER Women Solid Satchel Handbag",
+      "price": 28590,
+      "description": "This high-end satchel handbag is detailed with a solid surface with flap closure, a spacious compartment, and multiple inner pockets."
+    },
+    {
+      "id": 116,
+      "image": [
+        "https://lmsin.net/cdn-cgi/image/h=1125,w=1125,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009896725-1000009896724-1_01-2100.jpg"
+      ],
+      "name": "MYGLAMM Rose Lip Moisturising Gel",
+      "price": 440,
+      "description": "Manish Malhotra Rose Lip Moisturising Gel is made with pure, natural ingredients; a recipe that has been passed on by generations of Indian women to achieve soft, hydrated lips. It is blended with aloe vera juice and rose, which deeply nourish and lock in moisture to soothe chapped lips. This lip gel is further infused with beetroot and grape seed oil that help improve circulation and also soak your lips in antioxidants."
+    },
+    {
+      "id": 116,
+      "image": [
+        "https://lmsin.net/cdn-cgi/image/h=1125,w=1125,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009896725-1000009896724-1_01-2100.jpg"
+      ],
+      "name": "MYGLAMM Rose Lip Moisturising Gel",
+      "price": 440,
+      "description": "Manish Malhotra Rose Lip Moisturising Gel is made with pure, natural ingredients; a recipe that has been passed on by generations of Indian women to achieve soft, hydrated lips. It is blended with aloe vera juice and rose, which deeply nourish and lock in moisture to soothe chapped lips. This lip gel is further infused with beetroot and grape seed oil that help improve circulation and also soak your lips in antioxidants."
+    },
+    {
+      "id": 117,
+      "image": [
+        "https://lmsin.net/cdn-cgi/image/h=1125,w=1125,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000012241311-1000012241310_01-2100.jpg"
+      ],
+      "name": " Illuminating Primer Drops-Rosey Twirl",
+      "price": 990,
+      "description": "This grand 22 Karat gold pendant is shaped like a curved teardrop, with a carved panel of flower petals and leaves"
+    },
+    {
+      "id": 118,
+      "image": [
+        "https://lmsin.net/cdn-cgi/image/h=1125,w=1125,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009910568-1000009910567_01-2100.jpg"
+      ],
+      "name": " Beauty Facial Oil",
+      "price": 590,
+      "description": "Treat your skin with this soothing facial oil enriched with the glow potion. These oils feature ingredients and formulation to support all skin concerns, helping to restore, replenish, rejuvenate and re-energize your skin. Suitable for every skin type and concern, the range has been carefully curated for you to find an oil that is just right for you."
+    },
+    {
+      "id": 119,
+      "image": [
+        "https://lmsin.net/cdn-cgi/image/h=1125,w=1125,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009709138-1000009709137_01-2100.JPG"
+      ],
+      "name": "PLUM Skin Revival Face Wash",
+      "price": 396,
+      "description": "Exposure to the sun can irritate the skin and also lead to free-radical damage that can cause age spots, pigmentation, wrinkles and much else. Soothing Chamomile, rejuvenating White Tea and antioxidant-rich botanical extracts: just perfect to relax, refresh and revive skin that's exposed to the sun and the elements. Soap-free, gentle foaming face wash that will make your skin smile!"
+    },
+    {
+      "id": 120,
+      "image": [
+        "https://lmsin.net/cdn-cgi/image/h=1125,w=1125,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/0780602409999-1000000131794-621556_01-2100.jpg"
+      ],
+      "name": "LAKME Fairnes Face Wash ",
+      "price": 590,
+      "description": "Cleanse your skin with Lakme Perfect radiance face wash to remove all the traces of dirt, pollution, sweat and oiliness from your skin. It deep cleans your skin right down to the pores to ensure a radiant looking skin. "
+    },
+    {
+      "id": 101,
+      "image": [
+        "https://staticimg.titan.co.in/Tanishq/Catalog/511072SAGABA00.jpg"
+      ],
+      "name": "Surreal Gold Jali Work Stud Earrings",
+      "price": 35427,
+      "description": "Geometric Filigree Stud Earrings Crafted in 22 Karat High Polish Yellow Gold suitable for all occasions."
+    },
+    {
+      "id": 103,
+      "image": [
+        "https://staticimg.titan.co.in/Tanishq/Catalog/501920PLEAAA00_1.jpg"
+      ],
+      "name": "Charming Delicate Pendant",
+      "price": 8992,
+      "description": "Add a delicate charm to your work wear attire with this lovely pendant crafted in 18 karat yellow gold"
+    },
+    {
+      "id": 104,
+      "image": [
+        "https://staticimg.titan.co.in/Tanishq/Catalog/500149PSAAAAPL_1.jpg"
+      ],
+      "name": "Classy Elegant Pearl Pendant",
+      "price": 6876,
+      "description": "A classy pearl forms the center of this pendant crafted in 18 karat yellow gold and studded with pearls."
+    },
+    {
+      "id": 105,
+      "image": [
+        "https://staticimg.titan.co.in/Tanishq/Catalog/51D2I1FEHAA00_1.jpg"
+      ],
+      "name": "Modern Dual Leaf Gold Finger Ring",
+      "price": 14774,
+      "description": "Glamourise your everyday attires with this Modern Dual Leaf Gold Finger Ring crafted in 22 Karat Yellow Gold"
+    },
+    {
+      "id": 106,
+      "image": [
+        "https://staticimg.titan.co.in/Tanishq/Catalog/50D2I1FDZAA02_1.jpg"
+      ],
+      "name": "Subtle Butterflies Finger Ring",
+      "price": 34354,
+      "description": "Elevate your ensembles to new heights with this butterfly inspired finger ring crafted in 18 Karat Yellow Gold adorned with diamonds. Stone Clarity SI2"
+    },
+    {
+      "id": 107,
+      "image": [
+        "https://staticimg.titan.co.in/Tanishq/Catalog/50F2I1FAEAA31_1.jpg"
+      ],
+      "name": "Floral Navaratnam Finger Ring",
+      "price": 18796,
+      "description": "Make traditional occasions extra special with this floral Navaratnam finger ring crafted in 18 Karat Yellow Gold with diamonds. Stone Clarity VVS1"
+    },
+    {
+      "id": 108,
+      "image": [
+        "https://staticimg.titan.co.in/Tanishq/Catalog/50T442FEQAA00_1.jpg"
+      ],
+      "name": "Rococo Yellow Gold Waved Finger Ring",
+      "price": 19990,
+      "description": "This striking 18 Karat yellow gold ring features a polished gold wave lined with 7 gold beads "
+    },
+    {
+      "id": 109,
+      "image": [
+        "https://staticimg.titan.co.in/Tanishq/Catalog/51D2I1FEQAA00_1.jpg"
+      ],
+      "name": "Oval Leaf Rimmed Gold Finger Ring",
+      "price": 15990,
+      "description": "Subtle and sublime at the same time, this Oval Leaf Rimmed Gold Finger Ring crafted in 22 Karat Yellow Gold makes for a Modern wear."
+    },
+    {
+      "id": 110,
+      "image": [
+        "https://staticimg.titan.co.in/Tanishq/Catalog/511920PDWAAA00_1.jpg"
+      ],
+      "name": "Sumptuous Golden Teardrop Pendant",
+      "price": 25590,
+      "description": "This grand 22 Karat gold pendant is shaped like a curved teardrop, with a carved panel of flower petals and leaves"
+    }
+  ],
   "signup": [
     {
       "fullname": "Besty Maria Paul",
@@ -294,20 +491,63 @@
       "id": 3
     }
   ],
-  "login": [{
+  "login": [
+    {
       "email": "besty.paulson@aspiresys.com",
       "password": "123",
       "id": 1,
       "cart": []
+    },
+    {
+      "email": "jhgc",
+      "password": "mnbv",
+      "id": 2
+    },
+    {
+      "email": "besty.paulson@aspiresys.com",
+      "password": "123",
+      "id": 3
+    },
+    {
+      "email": "",
+      "password": "",
+      "id": 4
+    },
+    {
+      "email": "besty.paulson@aspiresys.com",
+      "password": "123",
+      "id": 5
+    },
+    {
+      "email": "besty.paulson@aspiresys.com",
+      "password": "123",
+      "id": 6
+    },
+    {
+      "email": "besty.paulson@aspiresys.com",
+      "password": "123",
+      "id": 7
+    },
+    {
+      "email": "besty.paulson@aspiresys.com",
+      "password": "123",
+      "id": 8
+    },
+    {
+      "email": "besty.paulson@aspiresys.com",
+      "password": "123",
+      "id": 9
     }
   ],
-  "products": [{
-    "id": 129,
-    "image": [
-      "https://lmsin.net/cdn-cgi/image/h=1125,w=1125,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000008479667_01-2100.jpg"
-    ],
-    "name": "GIO Analog-Digital Watch",
-    "price": 6590,
-    "description": "A work of perfect craftmanship, this analog-digital watch is detailed with minute precision and comes with a sleek design, and will lend you a modish look. It comes with plain three heads, bold stick indices, and multiple pushers. It is detailed with an adjustable tang buckle closure and is water-resistant up to 30m."
-  }]
+  "products": [
+    {
+      "id": 129,
+      "image": [
+        "https://lmsin.net/cdn-cgi/image/h=1125,w=1125,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000008479667_01-2100.jpg"
+      ],
+      "name": "GIO Analog-Digital Watch",
+      "price": 6590,
+      "description": "A work of perfect craftmanship, this analog-digital watch is detailed with minute precision and comes with a sleek design, and will lend you a modish look. It comes with plain three heads, bold stick indices, and multiple pushers. It is detailed with an adjustable tang buckle closure and is water-resistant up to 30m."
+    }
+  ]
 }

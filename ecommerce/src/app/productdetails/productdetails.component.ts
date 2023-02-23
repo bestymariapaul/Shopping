@@ -1,16 +1,18 @@
+import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { CartService } from '../cart.service';
-import { HttpClient } from '@angular/common/http';
 
 @Component({
-  selector: 'app-cart',
-  templateUrl: './cart.component.html',
-  styleUrls: ['./cart.component.css']
+  selector: 'app-productdetails',
+  templateUrl: './productdetails.component.html',
+  styleUrls: ['./productdetails.component.css']
 })
-export class CartComponent {
-
+export class ProductdetailsComponent {
   public products : any = [];
   public grandTotal !:number;
+  cartItemList:any
+  productList:any
+  
   constructor(private cartService : CartService, private http:HttpClient) { }
 
   ngOnInit(): void {
@@ -25,16 +27,10 @@ export class CartComponent {
     })
     
   }
-  removeItem(item: any){
-    this.cartService.removeCartItem(item);
+  addtoCart(product:any){
+    this.cartItemList.push(product);
+    this.productList.next(this.cartItemList);
+    console.log(this.cartItemList)
   }
-  emptycart(){
-    this.cartService.removeAllCart();
-  }
-cart(){
-  this.http.post<any>("http://localhost:3001/cart",this.cartService.getProducts)
-    .subscribe((res)=>{});
-}
-}
 
-
+}

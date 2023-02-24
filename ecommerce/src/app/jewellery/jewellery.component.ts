@@ -1,6 +1,7 @@
 import { Component,OnInit} from '@angular/core';
 import { ProductsService } from '../products.service';
 import { CartService } from '../cart.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-jewellery',
@@ -11,10 +12,13 @@ export class JewelleryComponent implements OnInit{
   position="center"
   productdata:any
   searchkey:string ="";
+  Loggedin = false;
+  name="";
 
 
-
-  constructor(private service:ProductsService,private CartService:CartService) { }
+  constructor(private router: Router, private service:ProductsService,private CartService:CartService) {
+   }
+  
 
   ngOnInit(): void {
     this.service.getAllProducts().subscribe((data)=>{
@@ -30,9 +34,12 @@ export class JewelleryComponent implements OnInit{
     })
   }
   addtocart(item:any){
-    this.CartService.addtoCart(item);
+    
+      this.CartService.addtoCart(item);
+
+    }
+    
     
   }
+   
   
-
-}

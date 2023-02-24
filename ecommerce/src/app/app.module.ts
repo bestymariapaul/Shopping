@@ -25,6 +25,7 @@ import { AdminpageComponent } from './adminpage/adminpage.component';
 
 import { ProductsComponent } from './products/products.component';
 import { ProductdetailsComponent } from './productdetails/productdetails.component';
+import { CheckoutComponent } from './checkout/checkout.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,7 +42,8 @@ import { ProductdetailsComponent } from './productdetails/productdetails.compone
     FilterPipe,
     AdminpageComponent,
     ProductsComponent,
-    ProductdetailsComponent
+    ProductdetailsComponent,
+    CheckoutComponent
   ],
   imports: [
     BrowserModule,

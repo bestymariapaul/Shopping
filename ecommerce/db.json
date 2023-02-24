@@ -82,19 +82,10 @@
       "description": "This grand 22 Karat gold pendant is shaped like a curved teardrop, with a carved panel of flower petals and leaves"
     },
     {
+      "name": "Intricate Yellow Gold Carved Floral Drop Earrings",
+      "price": "18016",
+      "image": "https://staticimg.titan.co.in/Tanishq/Catalog/501920DBQABA00_1.jpg?impolicy=pqmed&imwidth=640",
       "id": 111
-    },
-    {
-      "id": 112
-    },
-    {
-      "id": 113
-    },
-    {
-      "id": 114
-    },
-    {
-      "id": 115
     }
   ],
   "handbags": [
@@ -537,6 +528,71 @@
       "email": "besty.paulson@aspiresys.com",
       "password": "123",
       "id": 9
+    },
+    {
+      "email": "besty.paulson@aspiresys.com",
+      "password": "123",
+      "id": 10
+    },
+    {
+      "email": "besty.paulson@aspiresys.com",
+      "password": "123",
+      "id": 11
+    },
+    {
+      "email": "besty.paulson@aspiresys.com",
+      "password": "123",
+      "id": 12
+    },
+    {
+      "email": "besty.paulson@aspiresys.com",
+      "password": "123",
+      "id": 13
+    },
+    {
+      "email": "besty.paulson@aspiresys.com",
+      "password": "123",
+      "id": 14
+    },
+    {
+      "email": "besty.paulson@aspiresys.com",
+      "password": "123",
+      "id": 15
+    },
+    {
+      "email": "besty.paulson@aspiresys.com",
+      "password": "123",
+      "id": 16
+    },
+    {
+      "email": "besty.paulson@aspiresys.com",
+      "password": "123",
+      "id": 17
+    },
+    {
+      "email": "besty.paulson@aspiresys.com",
+      "password": "123",
+      "id": 18
+    },
+    {
+      "email": "besty.paulson@aspiresys.com",
+      "password": "123",
+      "id": 19
+    },
+    {
+      "email": "besty.paulson@aspiresys.com",
+      "password": "123",
+      "id": 20
+    },
+    {
+      "email": "besty.paulson@aspiresys.com",
+      "password": "123",
+      "id": 21
+    },
+    {
+      "email": "besty.paulson@aspiresys.com",
+      "password": "123",
+      "id": 22
     }
   ],
   "products": [

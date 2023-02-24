@@ -33,7 +33,7 @@ export class LoginComponent {
     if(user){
       alert(this.msg);
       this.loginForm.reset();
-      this.router.navigate(['cart']);
+      this.router.navigate(['home']);
 
     }
     else{

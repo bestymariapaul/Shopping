@@ -1,0 +1,35 @@
+
+    <form class="align" action="form">
+        <div>
+            <label for="Name">Name:</label><br>
+            <input type="text" style="width: 475px;">
+        </div>
+        <div>
+            <label for="Name">Address:</label><br>
+            <input type="text" style="width: 475px;">
+        </div>
+        <div>
+            <label for="Name">Phone Number</label><br>
+            <input type="text" style="width: 475px;">
+        </div><br>
+        <p > Select Your Payment Method</p>
+<div [align]="position" style="margin: 5%;" class="payment">
+    <mat-form-field appearance="fill">
+      <mat-label>Payment Method</mat-label>
+      <mat-select (selectionChange)="onChange($event)" >
+        <mat-option *ngFor="let Payment of Paymentmethod" [value]="Payment">{{Payment}}</mat-option>
+        
+      </mat-select>
+    </mat-form-field><br>
+    <button (click)="onclick()" >Proceed</button>
+    
+    <h1 [align]="position" style="color: rgb(207, 83, 10)">{{mg}}</h1>
+  </div>
+    </form>
+
+
+
+
+
+
+

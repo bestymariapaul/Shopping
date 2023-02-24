@@ -5,6 +5,7 @@ import { AdminloginComponent } from './adminlogin/adminlogin.component';
 import { AdminpageComponent } from './adminpage/adminpage.component';
 import { BeautyComponent } from './beauty/beauty.component';
 import { CartComponent } from './cart/cart.component';
+import { CheckoutComponent } from './checkout/checkout.component';
 import { FootwearComponent } from './footwear/footwear.component';
 import { HandbagsComponent } from './handbags/handbags.component';
 import { HomeComponent } from './home/home.component';
@@ -30,7 +31,8 @@ const routes: Routes = [
   {path: 'signup',component:SignupComponent},
   {path: 'adminpage',component:AdminpageComponent},
   {path: 'products',component:ProductsComponent},
-  {path: 'productdetails',component:ProductdetailsComponent}
+  {path: 'productdetails',component:ProductdetailsComponent},
+  {path: 'checkout',component:CheckoutComponent}
 ];
 
 @NgModule({

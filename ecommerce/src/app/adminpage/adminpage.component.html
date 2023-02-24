@@ -1,4 +1,123 @@
-<p>adminpage works!</p>
+<div class="row">
+    <div class="col-9">
+
+        <table class="table  table-striped table-light table-hover">
+            <thead>
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Item Name</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Image</th>
+                    <th scope="col">Remove</th>
+                </tr>
+            </thead>
+            
+            <tbody>
+                <p style="margin-left: 20px; color:black">Jewellery</p>
+                <tr *ngFor="let row of Jewellery">
+                    
+                    <th scope="row">{{row.id}}</th>
+                    <td>{{row.name}}</td>
+                    <td>{{row.price|currency:'INR'}}</td>
+                    <td><img style="height:100px;width:150px;" src="{{row.image}}"></td>
+                    
+                    <td><button (click)="deleteJewellery(row.id)"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash-2">
+                                <polyline points="3 6 5 6 21 6"></polyline>
+                                <path
+                                    d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2">
+                                </path>
+                                <line x1="10" y1="11" x2="10" y2="17"></line>
+                                <line x1="14" y1="11" x2="14" y2="17"></line>
+                            </svg></button></td>
+                </tr>
+                <p style="margin-left: 20px; color:black">Handbag</p>
+                <tr *ngFor="let row of Handbag">
+                    <th scope="row">{{row.id}}</th>
+                    <td>{{row.name}}</td>
+                    <td>{{row.price|currency:'INR'}}</td>
+                    <td><img style="height:100px;width:150px;" src="{{row.image}}"></td>
+                    
+                    <td><button (click)="deleteHandbag(row.id)"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash-2">
+                                <polyline points="3 6 5 6 21 6"></polyline>
+                                <path
+                                    d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2">
+                                </path>
+                                <line x1="10" y1="11" x2="10" y2="17"></line>
+                                <line x1="14" y1="11" x2="14" y2="17"></line>
+                            </svg></button></td>
+                </tr>
+                <p style="margin-left: 20px; color:black">Footwear</p>
+                <tr *ngFor="let row of Footwear">
+                    <th scope="row">{{row.id}}</th>
+                    <td>{{row.name}}</td>
+                    <td>{{row.price|currency:'INR'}}</td>
+                    <td><img style="height:100px;width:150px;" src="{{row.image}}"></td>
+                    
+                    <td><button (click)="deleteFootwear(row.id)"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash-2">
+                                <polyline points="3 6 5 6 21 6"></polyline>
+                                <path
+                                    d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2">
+                                </path>
+                                <line x1="10" y1="11" x2="10" y2="17"></line>
+                                <line x1="14" y1="11" x2="14" y2="17"></line>
+                            </svg></button></td>
+                </tr>
+                <p style="margin-left: 20px; color:black">Accessories</p>
+                <tr *ngFor="let row of Accessories">
+                    <th scope="row">{{row.id}}</th>
+                    <td>{{row.name}}</td>
+                    <td>{{row.price|currency:'INR'}}</td>
+                    <td><img style="height:100px;width:150px;" src="{{row.image}}"></td>
+                    
+                    <td><button (click)="deleteAccessories(row.id)"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash-2">
+                                <polyline points="3 6 5 6 21 6"></polyline>
+                                <path
+                                    d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2">
+                                </path>
+                                <line x1="10" y1="11" x2="10" y2="17"></line>
+                                <line x1="14" y1="11" x2="14" y2="17"></line>
+                            </svg></button></td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+    <div class="col-3">
+        <form [formGroup]="Form" (ngSubmit)="fill(Form)">
+            <div class="mb-3">
+                <label for="formGroupExampleInput4" class="form-label">Type</label>
+                <input type="text" class="form-control" id="formGroupExampleInput4" placeholder="Select type"
+                    formControlName="productType"> <!-- we use formControlName instead of id -->
+            </div>
+            <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label">Name</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter name"
+                    formControlName="productName"> <!-- we use formControlName instead of id -->
+            </div>
+            <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label">Price(in Rupees)</label>
+                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Enter Price"
+                    formControlName="productPrice">
+            </div>
+            <div class="mb-3">
+                <label for="formGroupExampleInput3" class="form-label">Image URL</label>
+                <input type="text" class="form-control" id="formGroupExampleInput3" placeholder="Enter image source"
+                    formControlName="productImage">
+            </div>
+            <button type="submit">Add Product</button>
+        </form>
+    </div>
+</div>
+<!-- <p>adminpage works!</p>
+
 <div class="card-top container-fluid"></div>
 <div  class="container">
 <div class="row">
@@ -11,14 +130,14 @@
             <img class="img" src="{{item.image}}" alt=""> <br><br>
             <h5 class="divv" style="white-space: nowrap;overflow: hidden;text-overflow: ellipse;max-width: 10inch;">{{item.beaty}}</h5>
             
-            <p class="divv" style="white-space: nowrap;overflow: hidden;text-overflow: ellipse;max-width: 10inch">{{item.name}}</p>
+            <h3 class="divv" style="white-space: nowrap;overflow: hidden;text-overflow: ellipse;max-width: 10inch">{{item.name}}</h3>
                 
               <P class="divv">₹ {{item.price}}</P> 
-                <h4>{{item.description}}</h4>
+                <p>{{item.description}}</p>
                 
                 </div>
                 <div class="button">
-                 <button class="btn btn-outline-dark" [routerLink]="['/jewellery']" (click)="removeitem(item)">Remove </button>&nbsp;
+                 <button class="btn btn-outline-dark" [routerLink]="['/jewellery']" (click)="deleteUser(item)">Remove </button>&nbsp;
             <button class="btn btn-outline-dark"  [routerLink]="['/jewellery']" (click)="addproduct(item)">ADD PRODUCT</button>
         </div></div>
             </ng-container>
@@ -75,4 +194,4 @@
          </div>
      </div>
  </ng-container> -->
- 
+  -->

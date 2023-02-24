@@ -1,0 +1,13 @@
+.align{
+    
+    border: none;
+    width:500px;
+    padding: 10px;
+    position: absolute;
+    top: 10%;  
+    left: 50%;
+    margin-top: 100px;
+    margin-left:-250px;
+    background: rgb(241, 119, 176);
+    background: linear-gradient(90deg,rgb(203, 203, 216)0%,rgb(223, 231, 236)100%);
+}

@@ -11,8 +11,6 @@ import { HandbagsComponent } from './handbags/handbags.component';
 import { HomeComponent } from './home/home.component';
 import { JewelleryComponent } from './jewellery/jewellery.component';
 import { LoginComponent } from './login/login.component';
-import { ProductdetailsComponent } from './productdetails/productdetails.component';
-import { ProductsComponent } from './products/products.component';
 import { SignupComponent } from './signup/signup.component';
 
 
@@ -30,8 +28,6 @@ const routes: Routes = [
   {path: 'cart',component:CartComponent},
   {path: 'signup',component:SignupComponent},
   {path: 'adminpage',component:AdminpageComponent},
-  {path: 'products',component:ProductsComponent},
-  {path: 'productdetails',component:ProductdetailsComponent},
   {path: 'checkout',component:CheckoutComponent}
 ];
 

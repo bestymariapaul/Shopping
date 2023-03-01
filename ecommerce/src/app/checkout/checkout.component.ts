@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CartService } from '../cart.service';
 
 @Component({
   selector: 'app-checkout',
@@ -7,6 +8,7 @@ import { Component } from '@angular/core';
 })
 export class CheckoutComponent {
   Paymentmethod: any[] = ['Cash On Delivery', 'Debit Card', 'Credit Card', 'GPay'];
+  constructor( private cartService: CartService){}
   gOnInit(): void {
   }
   onChange(event: any){
@@ -15,8 +17,10 @@ export class CheckoutComponent {
   msg=""
   mg=''
   mssg=""
-  onclick(){
-    alert("Order placed successfully")
-  }
   position="center";
+  emptycart(){
+    alert("Your Order Placed Successfully")
+    this.cartService.removeAllCart();
+
+  }
 }

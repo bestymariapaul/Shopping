@@ -60,6 +60,10 @@
 }
 .divv{
     padding-left: 40px;
+    white-space:nowrap; 
+    overflow:hidden; 
+    text-overflow:ellipsis; 
+    max-width: 100ch;
     
 }
 .div{
@@ -82,4 +86,7 @@
   }
 .spacer{
     padding: 20px;
+}
+.icon{
+    margin-left: 1250px;
 }

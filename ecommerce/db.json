@@ -480,18 +480,24 @@
       "password": "123",
       "mobile": "01234567890",
       "id": 3
+    },
+    {
+      "fullname": "Albin K Biju",
+      "email": "albinkbiju20@gmail.com",
+      "password": "Albin@123",
+      "mobile": "6282938106",
+      "id": 4
     }
   ],
   "login": [
     {
       "email": "besty.paulson@aspiresys.com",
       "password": "123",
-      "id": 1,
-      "cart": []
+      "id": 1
     },
     {
-      "email": "jhgc",
-      "password": "mnbv",
+      "email": "besty.paulson@aspiresys.com",
+      "password": "123",
       "id": 2
     },
     {
@@ -500,8 +506,8 @@
       "id": 3
     },
     {
-      "email": "",
-      "password": "",
+      "email": "besty.paulson@aspiresys.com",
+      "password": "123",
       "id": 4
     },
     {
@@ -510,17 +516,17 @@
       "id": 5
     },
     {
-      "email": "besty.paulson@aspiresys.com",
+      "email": "nora@gmailcom",
       "password": "123",
       "id": 6
     },
     {
-      "email": "besty.paulson@aspiresys.com",
+      "email": "nora@gmailcom",
       "password": "123",
       "id": 7
     },
     {
-      "email": "besty.paulson@aspiresys.com",
+      "email": "nora@gmail.com",
       "password": "123",
       "id": 8
     },
@@ -545,8 +551,8 @@
       "id": 12
     },
     {
-      "email": "besty.paulson@aspiresys.com",
-      "password": "123",
+      "email": "albinkbiju20@gmail.com",
+      "password": "Albin@123",
       "id": 13
     },
     {
@@ -580,19 +586,9 @@
       "id": 19
     },
     {
-      "email": "besty.paulson@aspiresys.com",
-      "password": "123",
+      "email": "besty.paulson@aspiresys.com123",
+      "password": "",
       "id": 20
-    },
-    {
-      "email": "besty.paulson@aspiresys.com",
-      "password": "123",
-      "id": 21
-    },
-    {
-      "email": "besty.paulson@aspiresys.com",
-      "password": "123",
-      "id": 22
     }
   ],
   "products": [

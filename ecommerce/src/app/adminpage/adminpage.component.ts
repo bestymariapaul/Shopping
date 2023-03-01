@@ -1,31 +1,24 @@
-import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
-import { AdminserviceService } from '../adminservice.service';
-import { CartService } from '../cart.service';
-import { ProductsService } from '../products.service';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import axios from 'axios';
+
 @Component({
   selector: 'app-adminpage',
   templateUrl: './adminpage.component.html',
   styleUrls: ['./adminpage.component.css']
 })
+
 export class AdminpageComponent {
-  // position="center"
-  // productdata:any
-  // searchkey:string ="";
-  // public products : any=[];
   Jewellery: any
   Handbag: any
   Footwear: any
   Accessories: any
   Form!: FormGroup;
-
-
-
+  
   constructor(private formbuilder: FormBuilder) {
     this.fetchData()
   }
+
   ngOnInit(): void {
     this.Form = this.formbuilder.group({
       productName: ['', [Validators.required]], //same as the name given in the form control name
@@ -34,6 +27,7 @@ export class AdminpageComponent {
       productImage: ['', [Validators.required]],
     })
   }
+  
   fill(Form: FormGroup) {
     axios({
       method: 'post',

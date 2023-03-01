@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { FormBuilder, FormGroup, FormControl } from '@angular/forms';
 import { Route, Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
+import { LoginService } from '../login.service';
 
 @Component({
   selector: 'app-login',
@@ -12,39 +13,19 @@ export class LoginComponent {
   productdata:any;
   loginForm!: FormGroup;
   msg='Login Success!!'
-  constructor(private formBuilder:FormBuilder, private http:HttpClient,private router:Router) { }
+  loggedin=false;
+  
+  constructor(private formBuilder:FormBuilder, private http:HttpClient,private router:Router,private authService: LoginService) { }
   ngOnInit(): void {
     this.loginForm=this.formBuilder.group({
       email:[''],
       password:['']
     })
   }
-  login()
-{
 
-  this.http.get<any>( "http://localhost:3001/signup")
-  .subscribe((res)=>{
-    const user= res.find((a:any)=>{
-      return a.email === this.loginForm.value.email && a.password === this.loginForm.value.password
-    });
-    this.http.post<any>("http://localhost:3001/login",this.loginForm.value)
-    .subscribe((res)=>{});
-
-    if(user){
-      alert(this.msg);
-      this.loginForm.reset();
-      this.router.navigate(['home']);
-
-    }
-    else{
-      alert("User Not Found!!")
-    }
-
-    
-   
-
-  })
-
-}
+  login(){
+    this.authService.login()
+    this.authService.sendMessage(this.loginForm.value).subscribe();
+  }
 logout(){ }
 }

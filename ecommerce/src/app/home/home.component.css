@@ -4,6 +4,9 @@
     padding-bottom: 50px;
     padding: 10px;
   } 
-.img{
+/* .img{
   display: flex;
+} */
+.slide{
+  padding: 30px;
 }

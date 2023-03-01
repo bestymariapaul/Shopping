@@ -37,6 +37,8 @@ h6 {
     background-clip: border-box;
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: .25rem;
+    margin: 25px;
+    padding: 25px;
 }
 
 .center .btn {

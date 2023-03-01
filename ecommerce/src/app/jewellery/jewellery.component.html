@@ -1,28 +1,26 @@
-<div class="card-top container-fluid"></div>
-<div  class="container">
-<div class="row">
 
-      
-        <ng-container *ngFor="let item of productdata | filter:searchkey :'name'">
-            <div class="card-col-md-4">
-           <div class="spacer">
-            <img class="img" src="{{item.image}}" alt=""> <br><br>
-            <h5 class="divv" style="white-space: nowrap;overflow: hidden;text-overflow: ellipse;max-width: 5inch">{{item.Jewellery}}</h5>
-            
-            <p class="divv" [routerLink]="['/productdetails']" style="white-space: nowrap;overflow: hidden;text-overflow: ellipse;max-width: 10inch">{{item.name}}</p>
-                
-              <P class="divv">₹ {{item.price}}</P> 
-                <!-- <h4>{{item.description}}</h4>
-                 -->
-                </div> 
-                <div class="button">
-                 <button  class="btn btn-outline-dark" [routerLink]="['/login']" (click)="addtocart(item)">ADD TO CART</button>&nbsp;
-            <button class="btn btn-outline-dark"  [routerLink]="['/cart']" (click)="addtocart(item)">BUY NOW</button>
-        </div></div>
-            </ng-container>
+
+<div class="card-top container-fluid">
+  <div  class="container">
+    <div class="row">
         
-            
-           
-           
+      <ng-container *ngFor="let item of productdata | filter:searchkey :'name'">
+        <div class="col-lg-4">
+        <div class="card-col-md-4">
+          <div class="spacer">
+            <img class="img" src="{{item.image}}" alt=""> <br><br>
+            <p class="divv" [routerLink]="['/productdetails']">{{item.name}}</p>
+            <P class="divv">₹ {{item.price}}</P>
+            <!-- <p style="white-space: nowrap;overflow: hidden;text-overflow: ellipse;max-width: 100ch">{{item.description}}</p> -->
+          </div>
+          <div class="button">
+            <button  class="btn btn-outline-dark" [routerLink]="['/cart']" (click)="addtocart(item)">ADD TO CART</button>&nbsp;
+            <button class="btn btn-outline-dark"  [routerLink]="['/cart']" (click)="addtocart(item)">BUY NOW</button>
+          </div>
+        </div>
+      </div>
+      </ng-container>
+      
     </div>
+  </div>
 </div>

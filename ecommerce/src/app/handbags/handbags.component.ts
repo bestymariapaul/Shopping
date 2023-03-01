@@ -1,6 +1,8 @@
 import { Component,OnInit} from '@angular/core';
 import { ProductsService } from '../products.service';
 import { CartService } from '../cart.service';
+import { LoginService } from '../login.service';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-handbags',
   templateUrl: './handbags.component.html',
@@ -13,7 +15,7 @@ export class HandbagsComponent implements OnInit {
 
 
 
-  constructor(private service:ProductsService,private CartService:CartService) { }
+  constructor(private service:ProductsService,  private logg: LoginService,private router:Router, private CartService:CartService) { }
 
   ngOnInit(): void {
     this.service.getallProducts().subscribe((data)=>{
@@ -29,7 +31,13 @@ export class HandbagsComponent implements OnInit {
     })
   }
   addtocart(item:any){
-    this.CartService.addtoCart(item);
+    if (this.logg.loggedIn==true) {
+      this.CartService.addtoCart(item);
+      this.router.navigate(['cart']);
+    }
+    else{
+      this.router.navigate(['login']);
+    }
     
   }
 

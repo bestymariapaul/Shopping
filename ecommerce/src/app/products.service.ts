@@ -5,6 +5,7 @@ import { BehaviorSubject } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
+
 export class ProductsService {
 public search = new BehaviorSubject<string>("");
 

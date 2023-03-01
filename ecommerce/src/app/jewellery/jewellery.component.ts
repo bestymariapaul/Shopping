@@ -2,6 +2,7 @@ import { Component,OnInit} from '@angular/core';
 import { ProductsService } from '../products.service';
 import { CartService } from '../cart.service';
 import { Router } from '@angular/router';
+import { LoginService } from '../login.service';
 
 @Component({
   selector: 'app-jewellery',
@@ -12,11 +13,12 @@ export class JewelleryComponent implements OnInit{
   position="center"
   productdata:any
   searchkey:string ="";
-  Loggedin = false;
   name="";
+  loged=false;
 
 
-  constructor(private router: Router, private service:ProductsService,private CartService:CartService) {
+  constructor(private router: Router, private service:ProductsService,
+    private CartService:CartService, private logg: LoginService) {
    }
   
 
@@ -34,8 +36,16 @@ export class JewelleryComponent implements OnInit{
     })
   }
   addtocart(item:any){
-    
+    if (this.logg.loggedIn==true) {
+      this.loged==true
       this.CartService.addtoCart(item);
+      this.router.navigate(['cart']);
+    }
+    else{
+      this.router.navigate(['login']);
+    }
+    
+      
 
     }
     

@@ -1,6 +1,8 @@
 import { Component ,OnInit} from '@angular/core';
 import { ProductsService } from '../products.service';
 import { CartService } from '../cart.service';
+import { LoginService } from '../login.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-footwear',
@@ -14,7 +16,7 @@ export class FootwearComponent implements OnInit{
 
 
 
-  constructor(private service:ProductsService,private CartService:CartService) { }
+  constructor(private service:ProductsService,private CartService:CartService, private logg: LoginService,private router:Router) { }
 
   ngOnInit(): void {
     this.service.getAllproducts().subscribe((data)=>{  
@@ -30,7 +32,13 @@ export class FootwearComponent implements OnInit{
     })
   }
   addtocart(item:any){
-    this.CartService.addtoCart(item);
+    if (this.logg.loggedIn==true) {
+      this.CartService.addtoCart(item);
+      this.router.navigate(['cart']);
+    }
+    else{
+      this.router.navigate(['login']);
+    }
     
   }
 

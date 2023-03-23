@@ -7,9 +7,11 @@ import { CartService } from '../cart.service';
   styleUrls: ['./checkout.component.css']
 })
 export class CheckoutComponent {
+  products:any[]=[]
   Paymentmethod: any[] = ['Cash On Delivery', 'Debit Card', 'Credit Card', 'GPay'];
   constructor( private cartService: CartService){}
-  gOnInit(): void {
+  ngOnInit(): void {
+    this.products=this.cartService.getCartItems()
   }
   onChange(event: any){
     console.log(event.value);
@@ -21,6 +23,10 @@ export class CheckoutComponent {
   emptycart(){
     alert("Your Order Placed Successfully")
     this.cartService.removeAllCart();
+    // this.cartService.clearCart()
 
+  }
+  cart(){
+    this.cartService.cartItemList
   }
 }

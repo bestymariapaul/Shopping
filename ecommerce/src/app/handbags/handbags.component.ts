@@ -12,10 +12,14 @@ export class HandbagsComponent implements OnInit {
   position="center"
   productdata:any
   searchkey:string ="";
+  loged=false;
+  flag=2
 
 
-
-  constructor(private service:ProductsService,  private logg: LoginService,private router:Router, private CartService:CartService) { }
+  constructor(private service:ProductsService,  private logg: LoginService,private router:Router, private CartService:CartService) {
+    this.service.count=this.flag
+    console.log("handbag",this.service.count)
+   }
 
   ngOnInit(): void {
     this.service.getallProducts().subscribe((data)=>{
@@ -30,16 +34,17 @@ export class HandbagsComponent implements OnInit {
       this.searchkey=val;
     })
   }
-  addtocart(item:any){
-    if (this.logg.loggedIn==true) {
-      this.CartService.addtoCart(item);
-      this.router.navigate(['cart']);
-    }
-    else{
-      this.router.navigate(['login']);
-    }
-    
-  }
+  // addtocart(item:any){
+  //   if (this.logg.loggedIn==true) {
+  //     this.loged===true
+  //     this.CartService.addtoCart(item);
+  //     // this.router.navigate(['cart']);
+  //   }
+  //   else{
+  //     this.router.navigate(['login']);
+  //   }
+       
+  // }
 
 }
 

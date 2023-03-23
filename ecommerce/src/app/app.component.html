@@ -1,3 +1,4 @@
+<ng-container *ngIf="loged">
 <div><mat-toolbar color="primary">
 <li><H1 routerLink="/home" >E-cart</H1></li>
 <div class="spacer"></div>
@@ -6,20 +7,7 @@
   <a   routerLink="cart" routerLinkActive="active" class="fas fa-cart-plus" > My Cart</a>
   <div style="font-size: 10px;" class="badge bg-danger">{{totalItem}}</div>
 </button>&nbsp;
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-<body>
-<div class="dropdown">
-  <button class="dropbtn">Login</button>
-  <div class="dropdown-content">
-   <h5><a [routerLink]="['/login']">User Login</a></h5>
-  <h5><a [routerLink]="['/adminlogin']" >Admin Login</a></h5> 
-</div>
-</div>
-</body>
-</html>
+<button style="border: 0px; background-color:rgb(72 72 191);color: white;" (click)="logout()">Logout</button>
 </mat-toolbar>
 
 <div class="container">
@@ -33,4 +21,38 @@
     </ul>
   </div>
 </div>
+</div>
+
+</ng-container>
+
+
+
+<ng-container *ngIf="!loged">
+  <div><mat-toolbar color="primary">
+    <li><H1 routerLink="/home" >E-cart</H1></li>
+    <div class="spacer"></div>
+    <!-- <a><input type="search" id="form1" placeholder="search" [(ngModel)]="searchTerm" (keyup)="search($event)"></a>&nbsp;&nbsp; -->
+    <button class="btn">
+      <a   routerLink="cart" routerLinkActive="active" class="fas fa-cart-plus" > My Cart</a>
+      <div style="font-size: 10px;" class="badge bg-danger">{{totalItem}}</div>
+    </button>&nbsp;
+    <button [routerLink]="['/login']" style="border: 0px; background-color:rgb(72 72 191);color: white;" >Login</button>
+    </mat-toolbar>
+    
+    <div class="container">
+      <div  class="row">
+        <ul>
+          <li class="all" [routerLink]="['/jewellery']">JEWELLERY</li>
+          <li class="all" [routerLink]="['/beauty']">BEAUTY</li>
+          <li class="all" [routerLink]="['/handbags']">HANDBAGS</li>
+          <li class="all" [routerLink]="['/footwear']">FOOTWEAR</li>
+          <li class="all" [routerLink]="['/accessories']">ACCESSORIES</li>
+        </ul>
+      </div>
+    </div>
+    </div>
+</ng-container>
+
+
+
 <router-outlet></router-outlet>

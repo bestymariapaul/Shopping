@@ -8,7 +8,6 @@ import {MatButtonModule} from '@angular/material/button';
 import { LoginComponent } from './login/login.component';
 import {MatSelectModule} from '@angular/material/select';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { AdminloginComponent } from './adminlogin/adminlogin.component';
 import { HomeComponent } from './home/home.component';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { JewelleryComponent } from './jewellery/jewellery.component';
@@ -23,12 +22,13 @@ import { FilterPipe } from './filter.pipe';
 import { AdminpageComponent } from './adminpage/adminpage.component';
 import {MatMenuModule} from '@angular/material/menu';
 import { CheckoutComponent } from './checkout/checkout.component';
+import { OrdersComponent } from './orders/orders.component';
+import { CommonComponent } from './common/common.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    AdminloginComponent,
     HomeComponent,
     JewelleryComponent,
     BeautyComponent,
@@ -39,7 +39,9 @@ import { CheckoutComponent } from './checkout/checkout.component';
     SignupComponent,
     FilterPipe,
     AdminpageComponent,
-    CheckoutComponent
+    CheckoutComponent,
+    OrdersComponent,
+    CommonComponent
   ],
   imports: [
     BrowserModule,

@@ -1,48 +1,87 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
-
 @Injectable({
   providedIn: 'root'
 })
-
 export class LoginService {
-  loggedIn=false
-  public email:any
-  public  password:any
-  
-  constructor(private http:HttpClient, private router: Router) { }
-  sendMessage(formData:any) {
-    return this.http.post('http://localhost:3001/login',formData);
+  public loggedIn=false
+  public adminlog=false
+  email: any;
+  password: any;
+   constructor(private http:HttpClient, private router: Router) { 
   }
+  // sendMessage(formData:any) {
+  //   return this.http.post('http://localhost:3001/login',formData);
+  // }
   
-  login() {
-    this.http.get<any>( "http://localhost:3001/login").subscribe((res)=>{
-      const user1= res.find((b:any)=>{
-        console.log(b.email)
-        console.log(b.password)
-        this.email=b.email
-        this.password=b.password
-      });
+  login(data:any) {
+    console.log("data taken",data)
+    
+      if(data.email==='admin@gmail.com' && data.password==='1234'){
+        this.http.get<any>( "http://localhost:3001/signup").subscribe((res)=>{
+          const user= res.find((a:any)=>{
+          return a.email === data.email && a.password === data.password
+        });
+        if(user){
+          this.loggedIn=true
+          this.adminlog=true
+          alert("Admin Login successfull");
+          this.router.navigate(['adminpage']);
+        }
+        else{
+          alert("Not Found!!")
+        }
+      })
+
+    }
+    else{
       this.http.get<any>( "http://localhost:3001/signup").subscribe((res)=>{
         const user= res.find((a:any)=>{
-          return a.email === this.email && a.password === this.password
+          return a.email === data.email && a.password === data.password
         });
         if(user){
           this.loggedIn=true
           alert("Login successfull");
-          if(this.loggedIn=true)
           this.router.navigate(['cart']);
         }
         else{
           alert("User Not Found!!")
         }
+        
       })
-    })
+
+    }
   }
+
   logout(){
-    this.loggedIn==false;
+    if(this.adminlog==true){
+      this.adminlog=false
+    }
+    this.loggedIn=false;
     alert("You have successfully logged out")
-    this.router.navigate(['login']);
+    this.router.navigate(['login']); 
   }
+   
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

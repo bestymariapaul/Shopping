@@ -23,9 +23,8 @@ export class LoginComponent {
     })
   }
 
-  login(){
-    this.authService.login()
-    this.authService.sendMessage(this.loginForm.value).subscribe();
+  login(data:any){
+    // this.authService.sendMessage(this.loginForm.value).subscribe();
+    this.authService.login(data)
   }
-logout(){ }
 }

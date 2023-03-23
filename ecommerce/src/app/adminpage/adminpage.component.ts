@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import axios from 'axios';
+import { LoginService } from '../login.service';
 
 @Component({
   selector: 'app-adminpage',
@@ -15,7 +16,7 @@ export class AdminpageComponent {
   Accessories: any
   Form!: FormGroup;
   
-  constructor(private formbuilder: FormBuilder) {
+  constructor(private formbuilder: FormBuilder,private log:LoginService) {
     this.fetchData()
   }
 
@@ -153,6 +154,9 @@ export class AdminpageComponent {
       .catch(error => {
         console.log(error);
       })
+  }
+  logout(){
+    this.log.logout()
   }
 
   //   this.service.Products()

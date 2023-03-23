@@ -1,24 +1,6 @@
 {
   "Jewellery": [
     {
-      "id": 101,
-      "image": [
-        "https://staticimg.titan.co.in/Tanishq/Catalog/511072SAGABA00.jpg"
-      ],
-      "name": "Surreal Gold Jali Work Stud Earrings",
-      "price": 35427,
-      "description": "Geometric Filigree Stud Earrings Crafted in 22 Karat High Polish Yellow Gold suitable for all occasions."
-    },
-    {
-      "id": 103,
-      "image": [
-        "https://staticimg.titan.co.in/Tanishq/Catalog/501920PLEAAA00_1.jpg"
-      ],
-      "name": "Charming Delicate Pendant",
-      "price": 8992,
-      "description": "Add a delicate charm to your work wear attire with this lovely pendant crafted in 18 karat yellow gold"
-    },
-    {
       "id": 104,
       "image": [
         "https://staticimg.titan.co.in/Tanishq/Catalog/500149PSAAAAPL_1.jpg"
@@ -276,7 +258,6 @@
       "description": "Engineered with a rubber strap, this digital multifunction watch from the CASIO household is an instant winner for its refined construction. It comes with tang buckle closure, stopwatch, alarm features and is water-resistant up to 200m. A perfect upgrade for any occasion, this one exudes an authentic vibe to your ensemble."
     }
   ],
-  "cart": [],
   "Allproducts": [
     {
       "id": 111,
@@ -487,119 +468,15 @@
       "password": "Albin@123",
       "mobile": "6282938106",
       "id": 4
-    }
-  ],
-  "login": [
-    {
-      "email": "besty.paulson@aspiresys.com",
-      "password": "123",
-      "id": 1
     },
     {
-      "email": "besty.paulson@aspiresys.com",
-      "password": "123",
-      "id": 2
-    },
-    {
-      "email": "besty.paulson@aspiresys.com",
-      "password": "123",
-      "id": 3
-    },
-    {
-      "email": "besty.paulson@aspiresys.com",
-      "password": "123",
-      "id": 4
-    },
-    {
-      "email": "besty.paulson@aspiresys.com",
-      "password": "123",
+      "fullname": "admin",
+      "email": "admin@gmail.com",
+      "password": "1234",
+      "mobile": "1234567890",
       "id": 5
-    },
-    {
-      "email": "nora@gmailcom",
-      "password": "123",
-      "id": 6
-    },
-    {
-      "email": "nora@gmailcom",
-      "password": "123",
-      "id": 7
-    },
-    {
-      "email": "nora@gmail.com",
-      "password": "123",
-      "id": 8
-    },
-    {
-      "email": "besty.paulson@aspiresys.com",
-      "password": "123",
-      "id": 9
-    },
-    {
-      "email": "besty.paulson@aspiresys.com",
-      "password": "123",
-      "id": 10
-    },
-    {
-      "email": "besty.paulson@aspiresys.com",
-      "password": "123",
-      "id": 11
-    },
-    {
-      "email": "besty.paulson@aspiresys.com",
-      "password": "123",
-      "id": 12
-    },
-    {
-      "email": "albinkbiju20@gmail.com",
-      "password": "Albin@123",
-      "id": 13
-    },
-    {
-      "email": "besty.paulson@aspiresys.com",
-      "password": "123",
-      "id": 14
-    },
-    {
-      "email": "besty.paulson@aspiresys.com",
-      "password": "123",
-      "id": 15
-    },
-    {
-      "email": "besty.paulson@aspiresys.com",
-      "password": "123",
-      "id": 16
-    },
-    {
-      "email": "besty.paulson@aspiresys.com",
-      "password": "123",
-      "id": 17
-    },
-    {
-      "email": "besty.paulson@aspiresys.com",
-      "password": "123",
-      "id": 18
-    },
-    {
-      "email": "besty.paulson@aspiresys.com",
-      "password": "123",
-      "id": 19
-    },
-    {
-      "email": "besty.paulson@aspiresys.com123",
-      "password": "",
-      "id": 20
     }
   ],
-  "products": [
-    {
-      "id": 129,
-      "image": [
-        "https://lmsin.net/cdn-cgi/image/h=1125,w=1125,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000008479667_01-2100.jpg"
-      ],
-      "name": "GIO Analog-Digital Watch",
-      "price": 6590,
-      "description": "A work of perfect craftmanship, this analog-digital watch is detailed with minute precision and comes with a sleek design, and will lend you a modish look. It comes with plain three heads, bold stick indices, and multiple pushers. It is detailed with an adjustable tang buckle closure and is water-resistant up to 30m."
-    }
-  ]
+  "login": [ ],
+  "cart": []
 }

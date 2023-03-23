@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, ReplaySubject } from 'rxjs';
 
@@ -6,12 +7,12 @@ import { BehaviorSubject, ReplaySubject } from 'rxjs';
 })
 
 export class CartService {
-
+  public orderlist : any =[]
   public cartItemList : any =[]
   public productList = new BehaviorSubject<any>([]);
   public search = new BehaviorSubject<string>("");
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
   
   getProducts(){
     return this.productList.asObservable();
@@ -27,6 +28,8 @@ export class CartService {
     this.productList.next(this.cartItemList);
     this.getTotalPrice();
     console.log(this.cartItemList)
+    this.orderlist=this.cartItemList
+    
   }
 
   getTotalPrice() : number{
@@ -50,4 +53,11 @@ export class CartService {
     this.cartItemList = []
     this.productList.next(this.cartItemList);
   }
+  getCartItems() {
+    return this.orderlist;
+  }
+  clearCart() {
+    this.cartItemList = []
+  }
+
 }
